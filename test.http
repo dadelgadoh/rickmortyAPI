@@ -1,0 +1,168 @@
+GET http://127.0.0.1:8000/api/character HTTP/1.1
+
+###
+
+
+POST http://127.0.0.1:8000/api/character HTTP/1.1
+Content-Type: application/json
+
+{
+            "id": 1,
+            "name": "Rick Sanchez",
+            "status": "Alive",
+            "species": "Human",
+            "type": "",
+            "gender": "Male",
+            "origin": "test origin",
+            "location": {
+                "name": "Citadel of Ricks",
+                "url": "https://rickandmortyapi.com/api/location/3"
+            },
+            "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+            "episode": "epi test",
+            "url": "https://rickandmortyapi.com/api/character/1",
+            "created": "2017-11-04T18:48:46.250Z"
+        }
+
+###
+
+PUT  http://127.0.0.1:8000/api/character/1
+Content-Type: application/json
+
+{
+            "id": 1,
+            "name": "Rick Sanchez",
+            "status": "Alive",
+            "species": "Human",
+            "type": "",
+            "gender": "Male",
+            "origin": "test origin",
+            "location": "edit",
+            "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+            "episode": "epi test",
+            "url": "https://rickandmortyapi.com/api/character/1",
+            "created": "2017-11-04T18:48:46.250Z"
+        }
+
+###
+DELETE http://127.0.0.1:8000/api/character/2
+
+###
+
+
+
+
+
+
+
+
+GET http://127.0.0.1:8000/api/episode HTTP/1.1
+
+###
+
+
+POST http://127.0.0.1:8000/api/episode HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Pilot",
+    "air_date": "December 2, 2013",
+    "episode": "S01E01",
+    "characters": [
+        "https://rickandmortyapi.com/api/character/1",
+        "https://rickandmortyapi.com/api/character/2",
+        "https://rickandmortyapi.com/api/character/35",
+        "https://rickandmortyapi.com/api/character/38",
+        "https://rickandmortyapi.com/api/character/62",
+        "https://rickandmortyapi.com/api/character/92",
+        "https://rickandmortyapi.com/api/character/127",
+        "https://rickandmortyapi.com/api/character/144",
+        "https://rickandmortyapi.com/api/character/158",
+        "https://rickandmortyapi.com/api/character/175",
+        "https://rickandmortyapi.com/api/character/179",
+        "https://rickandmortyapi.com/api/character/181",
+        "https://rickandmortyapi.com/api/character/239",
+        "https://rickandmortyapi.com/api/character/249",
+        "https://rickandmortyapi.com/api/character/271",
+        "https://rickandmortyapi.com/api/character/338",
+        "https://rickandmortyapi.com/api/character/394",
+        "https://rickandmortyapi.com/api/character/395",
+        "https://rickandmortyapi.com/api/character/435"
+    ],
+    "url": "https://rickandmortyapi.com/api/episode/1",
+    "created": "2017-11-10T12:56:33.798Z"
+}
+
+###
+
+PUT  http://127.0.0.1:8000/api/episode/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Pilot edit",
+    "air_date": "December 2, 2013",
+    "episode": "S01E01",
+    "characters": [
+        "https://rickandmortyapi.com/api/character/1",
+        "https://rickandmortyapi.com/api/character/2"
+    ],
+    "url": "https://rickandmortyapi.com/api/episode/1",
+    "created": "2017-11-10T12:56:33.798Z"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/episode/2
+
+
+###
+
+
+
+
+
+
+
+
+
+
+GET http://127.0.0.1:8000/api/location HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8000/api/location HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Abadango222222",
+    "type": "Cluster",
+    "dimension": "unknown",
+    "residents": [
+        "https://rickandmortyapi.com/api/character/6"
+    ],
+    "url": "https://rickandmortyapi.com/api/location/2",
+    "created": "2017-11-10T13:06:38.182Z"
+}
+
+
+###
+
+PUT  http://127.0.0.1:8000/api/location/4
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "aba edit",
+    "type": "Cluster",
+    "dimension": "unknown",
+    "residents": [
+        "https://rickandmortyapi.com/api/character/6"
+    ],
+    "url": "https://rickandmortyapi.com/api/location/2",
+    "created": "2017-11-10T13:06:38.182Z"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/location/4
