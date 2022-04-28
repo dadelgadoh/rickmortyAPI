@@ -17,8 +17,9 @@ class EpisodeController extends Controller
     public function index()
     {
         //
-        $episodes = Episode::all();
-        return $episodes;
+        // $episodes = Episode::all();
+        $episodes = Episode::paginate(20);
+        // return $episodes;
         return response()->json([
             'status' => true,
             'results' => $episodes

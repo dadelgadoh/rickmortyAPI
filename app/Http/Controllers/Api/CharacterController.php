@@ -17,7 +17,8 @@ class CharacterController extends Controller
     public function index()
     {
         //
-        $characters = Character::all();
+        // $characters = Character::all();
+        $characters = Character::paginate(20);
 
         return response()->json([
             'status' => true,
