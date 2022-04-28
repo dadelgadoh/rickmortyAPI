@@ -23,8 +23,8 @@ Se pone a disposión 3 endpoints:
 - El proyecto ya cuenta con una db de sqlite en \rickmortyAPI\database\rickandmorty_v2.sqlite, previamente cargada. 
 En caso de cambiar configuraciones o de trabajar en otra base, modificar \rickmortyAPI\.env , y además:
 
-- php artisan migrate
-- php artisan artisan db:seed (Puede tomar tiempo, precarga información de api existente)
+	- php artisan migrate
+	- php artisan artisan db:seed (Puede tomar tiempo, precarga información de api existente)
  
 ## Ejecución
 -php artisan serve
