@@ -10,10 +10,10 @@ Se pone a disposión 3 endpoints:
 - /api/episode
 - /api/location
 
-##Requerimientos
+## Requerimientos
 - Composer
 
-##Instalación
+## Instalación
 
 - Clonar repositorio
 - cd rickmortyAPI
@@ -26,7 +26,7 @@ En caso de cambiar configuraciones o de trabajar en otra base, modificar \rickmo
 - php artisan migrate
 - php artisan artisan db:seed (Puede tomar tiempo, precarga información de api existente)
  
-##Ejecución
+## Ejecución
 -php artisan serve
 
 ## FEATURES
